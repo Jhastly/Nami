@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                });
+            } 
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <div class="logo">LAKKI WEBSITE</div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">TESTIMONY</a></li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1> WELCOME TO LAKKI</h1>
+            <P>For more videos, please subscribe to our channel.</P>
+
+            <div class="buttons">
+                <button type="button"><span></span>READ MORE</button>
+                <button type="button"><span></span>WATCH MORE</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--This code is for news-->
+    <div class="blog-section" id="news">
+
+        <div class="section-content">
+
+            <div class="title">
+                <h2>LAKKI NEWS</h2>
+                <p>Examples of Lakes</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+
+                    <div class="image-section">
+                        <img src="img/b.jpeg">
+                     </div>
+
+                    <div class="article">
+                        <h4>Lake Superior</h4>
+                        <p>Lake Superior world's largest freshwater lake in central North America </br> </br>
+            
+                        Lake Superior is the largest freshwater lake in the world by 
+                        surface area and the third-largest by volume, holding 10% of the world's 
+                        surface fresh water. </p>
+                    </div>
+
+                    <div class="blog-view">
+                        <a href="" class="button">Read More</a>
+                    </div>
+            
+                    <div class="posted-date">
+                        <p>Date Posted: June 6, 2019</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+
+                <div class="image-section">
+                    <img src="img/s.jpg">
+                </div>
+            
+                <div class="article">
+                    <h4>Lake Michigan</h4>
+                    <p>Lake Michigan is one of the Great Lakes of North America</br> </br>
+            
+                    Lake Michigan is the world's largest lake by area located fully in one country.
+                    It is shared, from west to east, by the U.S. states of Wisconsin, Illinois, Indiana, and Michigan. 
+                    Ports along its shores include Chicago in Illinois, Gary in Indiana, Milwaukee and Green Bay in Wisconsin, 
+                    and Muskegon in Michigan </p>
+                </div>
+
+                 <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                 </div>
+            
+                <div class="posted-date">
+                    <p>Date Posted: August 19, 2019</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+
+                <div class="image-section">
+                        <img src="img/m.webp">
+                </div>
+                
+                <div class="article">
+                    <h4>Lake Baikal</h4>
+                    <p>Lake Baikal is a rift lake in Russia </br> </br> 
+                        
+                        It is situated in southern Siberia, between the federal subjects of Irkutsk Oblast to the northwest and the Republic of 
+                        Buryatia to the southeast. With 23,615.39 km3 (5,670 cu mi) of water, 
+                        Lake Baikal is the world's largest freshwater lake by volume, containing 22–23% of the world's
+                        fresh surface water,more than all of the North American Great Lakes combined. </p>
+                </div>
+
+                <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                </div>
+                
+                <div class="posted-date">
+                    <p>Date Posted: 2001</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---This is about us page-->
+<div class="about-section" id="about">
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>This page contains the collection of lakes' history.</p>
+    </div>
+    
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="img/bts.jpg">
+            </div>
+
+            <div class="about-content">
+                <h2>LAKKI HISTORY</h2>
+                <p>The lake 'LAKKI' is formerly known as Leykk and was later on changed and renamed after a handsome man 
+                    visited the place and impreganated almost every women on the lake. After such incident, the man had
+                    vanished and is nowhere to be seen. Each women had hoped that he would return for the second round. But
+                    unfortunately, after years of waiting. There has been no signs of the man's return. Hence, in his memory,
+                    the lake had been named 'LAKKI' to remind all the women that there had been once a man that brought them to heaven. 
+                </p>
+
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<!--Gallery Page-->
+
+    <div class="gallery" id="gallery">
+        <input type="radio" name="photos" id="check1" checked>
+        <input type="radio" name="photos" id="check2">
+        <input type="radio" name="photos" id="check3">
+        <input type="radio" name="photos" id="check4">
+    
+        <div class="gallery-container">
+            <h1>GALLERY</h1>
+                <div class="top-content">
+                    <h3>Photo Gallery</h3>
+                    <label for="check1">All Photos</label>
+                    <label for="check2">Bird's Eye View</label>
+                    <label for="check3">Sunset View</label>
+                    <label for="check4">Lake Takes</label>
+                </div>
+
+                <div class="photo-gallery">
+                    
+                    <div class="pic BEV">
+                        <img src="img/B1.jpg">
+                    </div>
+
+                    <div class="pic SV">
+                        <img src="img/S1.jpg">
+                    </div>
+
+                    <div class="pic LT">
+                        <img src="img/L1.jpg">
+                    </div>
+
+                    <div class="pic BEV">
+                        <img src="img/B2.jpg">
+                    </div>
+
+                    <div class="pic SV">
+                        <img src="img/S2.jpg">
+                    </div>
+
+                    <div class="pic LT">
+                        <img src="img/L2.jpg">
+                    </div>
+
+                    <div class="pic BEV">
+                        <img src="img/B3.jpg">
+                    </div>
+
+                    <div class="pic SV">
+                        <img src="img/S3.jpg">
+                    </div>
+
+                    <div class="pic LT">
+                        <img src="img/L3.jpg">
+                    </div>
+
+                    <div class="pic BEV">
+                        <img src="img/B4.jpg">
+                    </div>
+
+                    <div class="pic SV">
+                        <img src="img/S4.jpg">
+                    </div>
+
+                    <div class="pic LT">
+                        <img src="img/L4.jpg">
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!--Testimonials-->
+</body>
+</html>
