@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                });
+            } 
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="banner" id="home">
+        <div class="navbar">
+            <div class="logo">NAMI HANDICRAFTS</div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#testimony">TESTIMONY</a></li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>NAMI HANDICRAFTS</h1>
+            <h1>WELCOMES YOU</h1>
+            <P>100% Hand-Made with Love</P>
+
+            <div class="buttons">
+                <button type="button"><span></span>READ MORE</button>
+                <button type="button"><span></span>CONTACT</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--This code is for news-->
+    <div class="blog-section" id="news">
+
+        <div class="section-content">
+
+            <div class="title">
+                <h2>NAMI HANDICRAFTS NEWS</h2>
+                <p>Latest on Nami Handicrafts!</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+
+                    <div class="image-section">
+                        <img src="img/b.jpg">
+                     </div>
+
+                    <div class="article">
+                        <h4>CROCHETS</h4>
+                        <p>Crafting Beauty and Utility: The Art of Crochet</br> </br>
+                        <p>Crochet is a craft technique using a hook to loop yarn into 
+                            intricate patterns, producing diverse items like clothing, 
+                            accessories, and decor with artistic flair and utility.
+                        </p>
+                    </div>
+
+                    <div class="blog-view">
+                        <a href="" class="button">Read More</a>
+                    </div>
+                    <div class="posted-date">
+                        <p>Date Posted: November 15, 2021</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+
+                <div class="image-section">
+                    <img src="img/c.jpg">
+                </div>
+            
+                <div class="article">
+                    <h4>GIFT SETS</h4>
+                    <p>Nature's Harmony: Curated Bouquet Collections for Every Occasion</br> </br>
+                    <p>Bouquet sets are curated collections of flowers and foliage, designed to 
+                        create stunning arrangements for any occasion, showcasing nature's beauty 
+                        in harmonious combinations.
+                    </p>
+                </div>
+
+                 <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                 </div>
+            
+                <div class="posted-date">
+                    <p>Date Posted: January 14, 2022</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+
+                <div class="image-section">
+                        <img src="img/d.jpg">
+                </div>
+                
+                <div class="article">
+                    <h4>BRACELETS</h4>
+                    <p>Bracelets: Adorn Your Wrist with Style and Expression</br> </br> 
+                        Bracelets are accessories worn around the wrist, ranging from delicate 
+                        chains to ornate cuffs, adding style and personal expression to any outfit.
+                    </p>
+                </div>
+
+                <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                </div>
+                
+                <div class="posted-date">
+                    <p>Date Posted: July 25, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!---This is about us page-->
+<div class="about-section" id="about">
+    <div class="heading">
+        <h1>ABOUT US</h1>
+        <p>Get to know NAMI HANDICRAFTS.</p>
+    </div>
+    
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="img/e.jpg">
+            </div>
+
+            <div class="about-content">
+                <h2>HOW NAMI HANDICRAFTS STARTED</h2>
+                <p>From humble beginnings, the journey of excellence unfolds. NAMI HANDICRAFTS, 
+                    forged from the realm of dreams, has risen to materialize its aspirations in 
+                    the realm of reality. Its inception marked the inception of dreams, a testament 
+                    to transformation, and a catalyst for the realization of countless aspirations. 
+                    Every creation is a testament to dedication and meticulous craftsmanship, 
+                    orchestrated to bestow satisfaction upon customers and deliver an unparalleled 
+                    experience to buyers. With unwavering effort and meticulous care, each product 
+                    encapsulates a commitment to excellence, a journey that bridges the gap between 
+                    dreams and tangible reality.
+                </p>
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<!--Gallery Page-->
+
+<div class="gallery" id="gallery">
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2">
+    <input type="radio" name="photos" id="check3">
+    <input type="radio" name="photos" id="check4">
+
+    <div class="gallery-container">
+        <h1>OUR PHOTO GALLERY</h1>
+            <div class="top-content">
+                <h3>PRODUCTS</h3>
+                <label for="check1">All Items</label>
+                <label for="check2">Crochets</label>
+                <label for="check3">Gift Sets</label>
+                <label for="check4">Bracelets</label>
+            </div>
+
+            <div class="photo-gallery">
+                
+                <div class="pic Crochets">
+                    <img src="img/c1.jpg">
+                </div>
+
+                <div class="pic GiftSets">
+                    <img src="img/g1.jpg">
+                </div>
+
+                <div class="pic Bracelets">
+                    <img src="img/b1.jpg">
+                </div>
+
+                <div class="pic Crochets">
+                    <img src="img/c2.jpg">
+                </div>
+
+                <div class="pic GiftSets">
+                    <img src="img/g2.jpg">
+                </div>
+
+                <div class="pic Bracelets">
+                    <img src="img/b2.jpg">
+                </div>
+
+                <div class="pic Crochets">
+                    <img src="img/c3.jpg">
+                </div>
+
+                <div class="pic GiftSets">
+                    <img src="img/g3.jpg">
+                </div>
+
+                <div class="pic Bracelets">
+                    <img src="img/b3.jpg">
+                </div>
+
+                <div class="pic Crochets">
+                    <img src="img/c4.jpg">
+                </div>
+
+                <div class="pic GiftSets">
+                    <img src="img/g4.jpg">
+                </div>
+
+                <div class="pic Bracelets">
+                    <img src="img/b4.jpg">
+                </div>
+            </div>
+    </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- The Close Button -->
+<span class="close">&times;</span>
+
+<!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01">
+
+<!-- Modal Caption (Image Text) -->
+<div id="caption"></div>
+</div>
+
+<!--This code is for testimony--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="test.css">
+
+<div class="testimonials" id="testimony">
+    <div class="testimonial-inner">
+      <h1> TESTIMONY </h1>
+      <div class="border"></div>
+      
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/jasper.jpg" alt="">
+            <div class="name"> Jasper Jev Operio </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> I'm absolutely thrilled with the craftsmanship and quality of Nami Handicrafts' 
+                creations. Every piece feels like a work of art, meticulously crafted with care. 
+                The attention to detail is unmatched, and each item I've purchased has brought a 
+                touch of elegance to my life. The dedication to excellence is truly inspiring.
+            </p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/rehlen.jpg" alt="">
+            <div class="name"> Rehlen Mae Forro </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>I've had the pleasure of experiencing the wonderful craftsmanship of Nami Handicrafts. 
+                The attention to detail and unique designs are truly captivating. While I absolutely 
+                love the pieces I received, I'm giving it a four-star rating because I believe there's 
+                always room for improvement. Keep up the fantastic work!
+            </p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/jamaica.jpg" alt="">
+            <div class="name"> Jamaica Ciasico </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>I'm truly impressed with Nami Handicrafts and their exquisite creations. The quality, 
+                elegance, and attention to detail in their products are second to none. From the moment 
+                I received my order, I could feel the dedication and passion that goes into every piece. 
+                I wholeheartedly recommend their work to anyone seeking timeless beauty and craftsmanship.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--My Footer-->
+
+  <div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p class="copyright"> Manage and Created by Jaja @ 2023</p>
+    </footer>
+</div>
+
+<a href="#home" id="myBtn" title="Go to top">TOP</a>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function(){scrollFunction()};
+    function scrollFunction(){
+        if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
+            mybutton.style.display="block";
+        } else{
+            mybutton.style.display="none";
+        }
+            }
+
+    </script>
+
+
+</body>
+</html>
